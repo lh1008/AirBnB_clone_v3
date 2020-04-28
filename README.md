@@ -150,13 +150,78 @@ EOF  all  create  destroy  help  quit  show  update
 (hbnb) quit
 ```
 
+-.Adding RESTful API.-
+## 0x05. AirBnB clone - RESTful API
+
+### Learning Objectives
+
+
+- What REST means
+- What API means
+- What CORS means
+- What is an API
+- What is a REST API
+- What are other type of APIs
+- Which is the HTTP method to retrieve resource(s)
+- Which is the HTTP method to create a resource
+- Which is the HTTP method to update resource
+- Which is the HTTP method to delete resource
+- How to request Rest API
+
+### Tasks
+
+_**0. Restart from scratch!**_  
+Update the repository name to AirBnB_clone_v3  
+
+_**1. Never fail!**_  
+The following requirements must be met for your project:  
+
+- all current tests must pass (don’t delete them…)
+- add new tests as much as you can (tests are mandatory for some tasks)
+
+_**2. Code review**_  
+Like “tests”, code review is the base of all software development.  
+
+_**3. Improve storage**_  
+Update `DBStorage` and `FileStorage`, adding two new methods. All changes should be done in the branch **`storage_get_count`**.  
+
+_**4. Status of your API**_  
+It’s time to start your API!  
+
+_**5. Some stats?**_  
+Create an endpoint that retrieves the number of each objects by type.  
+
+_**6. Not found**_  
+Designers are really creative when they have to design a “404 page”, a “Not found”… [34 brilliantly designed 404 error pages](https://www.creativebloq.com/web-design/best-404-pages-812505)  
+
+_**7. State**_  
+Create a new view for `State` objects that handles all default RestFul API actions.  
+
+_**8. City**_  
+Same as `State`, create a new view for `City` objects that handles all default RestFul API actions.  
+
+_**9. Amenity**_  
+Create a new view for `Amenity` objects that handles all default RestFul API actions.  
+
+_**10. User**_  
+Create a new view for `User` object that handles all default RestFul API actions.  
+
+_**11. Place**_  
+Create a new view for `Place` objects that handles all default RestFul API actions.  
+
+_**12. Reviews**_  
+Create a new view for `Review` object that handles all default RestFul API actions.  
+
+_**13. HTTP access control (CORS)**_  
+A resource makes a cross-origin HTTP request when it requests a resource from a different domain, or port, than the one the first resource itself serves.  
+
 ## Bugs
 No known bugs at this time. 
 
 ## Authors
-Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
-Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)
+**Jaime Andrés Gálvez Villamarin** - [Github](https://github.com/JamesPagani)  
+**Jackson Moreno** - [Github](https://github.com/jaarmore)  
+**Luis Herrera** - [Github](https://github.com/lh1008)  
 
-Second part of Airbnb: Joann Vuong
 ## License
 Public Domain. No copy write protection. 
