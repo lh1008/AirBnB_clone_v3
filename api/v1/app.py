@@ -17,7 +17,7 @@ api_port = getenv("HBNB_API_PORT", default="5000")
 
 
 @app.teardown_appcontext
-def close_session():
+def close_session(e):
     """Close the SQLAlchemy session after the request."""
     storage.close
 
