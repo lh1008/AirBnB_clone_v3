@@ -11,4 +11,4 @@ from flask import jsonify
 @app_views.route('/status')
 def status():
     """Check if the API works."""
-    return jsonify(status='ok')
+    return jsonify(status='OK')
