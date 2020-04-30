@@ -25,7 +25,7 @@ def not_found(error):
 @app.teardown_appcontext
 def close_session(e):
     """Close the SQLAlchemy session after the request."""
-    storage.close
+    storage.close()
 
 
 if __name__ == "__main__":
