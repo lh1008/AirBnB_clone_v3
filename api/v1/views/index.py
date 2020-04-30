@@ -15,11 +15,11 @@ from models.state import State
 from models.user import User
 
 
-
 @app_views.route('/status')
 def status():
     """Check if the API works."""
     return jsonify(status='OK')
+
 
 @app_views.route('/stats')
 def stats():
