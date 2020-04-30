@@ -30,5 +30,5 @@ def stats():
     reviews = storage.count(Review)
     states = storage.count(State)
     users = storage.count(User)
-    return jsonify(amenities=amenities, cities=cities, reviews=reviews,
-                   states=states, users=users)
+    return jsonify(amenities=amenities, cities=cities, places=places,
+                   reviews=reviews, states=states, users=users)
