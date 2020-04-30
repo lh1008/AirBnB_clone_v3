@@ -73,3 +73,12 @@ class BaseModel:
     def delete(self):
         """delete the current instance from the storage"""
         models.storage.delete(self)
+
+    def update(self, dic):
+        """ Method to ubdate an object """
+        listing = ['id', 'created_at', 'updated_at']
+        if dic:
+            for key, value in dic.items():
+                if key not in listing:
+                    setattr(self, key, value)
+            self.save()
