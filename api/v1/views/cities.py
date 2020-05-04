@@ -61,5 +61,5 @@ def put_cities(city_id):
             abort(400, 'Not a JSON')
         info = request.get_json()
         cities.update(info)
-        return jsonify(cities.to_dict())
+        return jsonify(cities.to_dict()), 200
     abort(404)
