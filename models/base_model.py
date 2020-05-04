@@ -76,7 +76,8 @@ class BaseModel:
 
     def update(self, dic):
         """ Method to ubdate an object """
-        listing = ['id', 'created_at', 'updated_at']
+        listing = ['id', 'created_at', 'updated_at', 'state_id',
+                   'email', 'user_id', 'city_id', 'place_id']
         if dic:
             for key, value in dic.items():
                 if key not in listing:

@@ -20,6 +20,9 @@ def cities(state_id):
         return jsonify(cities)
 
     if request.method == 'POST':
+        states = storage.get(State, state_id)
+        if states is None:
+            abort(404)
         info = request.get_json()
         info['state_id'] = state_id
         if info is None:
